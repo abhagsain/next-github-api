@@ -26,7 +26,9 @@ export default function Home() {
         </a>{" "}
         to get the data
       </p>
-      <div style={{ display: "flex", alignItems: "center" }}>
+      <div
+        style={{ display: "flex", alignItems: "center", textAlign: "center" }}
+      >
         <p>
           Supports everything that the{" "}
           <a
