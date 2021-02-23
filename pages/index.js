@@ -26,6 +26,29 @@ export default function Home() {
         </a>{" "}
         to get the data
       </p>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <p>
+          Supports everything that the{" "}
+          <a
+            href="https://jobs.github.com/api"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "blue" }}
+          >
+            Main API
+          </a>{" "}
+          supports. Thanks to{" "}
+          <a
+            href="https://nextjs.org/docs/api-routes/introduction"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: "blue" }}
+          >
+            Next.js API Routes
+          </a>
+          {" ♥"}
+        </p>
+      </div>
     </div>
   );
 }
