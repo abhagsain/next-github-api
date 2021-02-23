@@ -1,10 +1,15 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from "axios";
 export default async (req, res) => {
+  const url = req.url.includes("?") ? req.url.split("/api/jobs")[1] : "";
+  const URL = `https://jobs.github.com/positions.json${url}`;
   try {
-    const { data } = await axios.get("https://jobs.github.com/positions.json");
+    const { data } = await axios.get(URL);
     return res.status(200).json({ data });
   } catch (error) {
-    return res.status(500).json({ message: "Oopes there was an error", error });
+    return res.status(500).json({
+      message: "Oops there was an error. Check the URL and params",
+      error,
+    });
   }
 };
