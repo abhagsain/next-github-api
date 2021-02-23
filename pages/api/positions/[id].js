@@ -1,4 +1,11 @@
 import axios from "axios";
+import Cors from "cors";
+import middleware from "../../../lib/middleware";
+const cors = middleware(
+  Cors({
+    methods: ["GET", "POST", "OPTIONS"],
+  })
+);
 export default async (req, res) => {
   const {
     query: { id },
@@ -8,6 +15,8 @@ export default async (req, res) => {
       message: "Not Sure what you're looking for 🤷‍♂️",
     });
   }
+  await cors(req, res);
+
   const ID = id.includes(".json") ? id.replace(".json", "") : id;
   const URL = `https://jobs.github.com/positions/${ID}`;
   try {
