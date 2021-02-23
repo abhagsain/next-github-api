@@ -17,8 +17,7 @@ export default async (req, res) => {
   }
   await cors(req, res);
 
-  const ID = id.includes(".json") ? id.replace(".json", "") : id;
-  const URL = `https://jobs.github.com/positions/${ID}`;
+  const URL = `https://jobs.github.com/positions/${id}`;
   try {
     const { data } = await axios.get(URL);
     return res.status(200).json({ data });
