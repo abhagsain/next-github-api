@@ -1,7 +1,6 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import axios from "axios";
 export default async (req, res) => {
-  const url = req.url.includes("?") ? req.url.split("/api/jobs")[1] : "";
+  const url = req.url.includes("?") ? req.url.split("/api/positions")[1] : "";
   const URL = `https://jobs.github.com/positions.json${url}`;
   try {
     const { data } = await axios.get(URL);

@@ -4,7 +4,7 @@ Are you frustrated with the CORS error while using Github Jobs API?
 
 You can pass all the query params that main API supports. [See it here](https://jobs.github.com/api)
 
-Use [this URL](https://github-api-next.vercel.app/api/jobs) to get the data.
+Use [this URL](https://github-api-next.vercel.app/api/positions) to get the data.
 
 ![IMAGE](https://user-images.githubusercontent.com/36589645/108876414-311fcd00-7624-11eb-8aad-deead053ca86.png)
 

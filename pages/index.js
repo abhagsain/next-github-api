@@ -17,7 +17,7 @@ export default function Home() {
       <p style={{ fontSize: "1.5rem", fontWeight: "bold" }}>
         Use{" "}
         <a
-          href="https://github-api-next.vercel.app/api/jobs"
+          href="https://github-api-abhagsain.vercel.app/api/positions"
           target="_blank"
           rel="noopener noreferrer"
           style={{ color: "blue" }}
